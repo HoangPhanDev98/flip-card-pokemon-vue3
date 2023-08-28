@@ -12,6 +12,7 @@
     :timer="setting.timer"
     @on-start-game="displayScreen = 'gameplay'"
   />
+  <footer-component />
 </template>
 
 <script setup lang="ts">
@@ -22,6 +23,7 @@ import { shuffled } from '@/utils/common';
 import GameplayScreen from './components/GameplayScreen.vue';
 import HomeScreen from './components/HomeScreen.vue';
 import ResultScreen from './components/ResultScreen.vue';
+import FooterComponent from './components/FooterComponent.vue';
 import { CARD_CONTEXT_LIST } from './symbols';
 
 const displayScreen = ref('home');

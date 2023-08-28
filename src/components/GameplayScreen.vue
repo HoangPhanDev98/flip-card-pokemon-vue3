@@ -4,7 +4,7 @@
       class="screen__inner"
       :style="{
         width: `${
-          (((920 - (16 * 4)) / numberCardInRow - 16) * 0.75 + 16) *
+          (((920 - 16 * 4) / numberCardInRow - 16) * 0.75 + 16) *
           numberCardInRow
         }px`,
       }"
